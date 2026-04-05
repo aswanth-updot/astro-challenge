@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import Header from "../components/pageBlocks/header";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import HomeHero from "../components/pageBlocks/home/hero";
+import PayloadClients from "../components/pageBlocks/home/payloadClients";
+import PayloadPartners from "../components/pageBlocks/home/payloadPartners";
+import OurServices from "../components/pageBlocks/home/ourServices";
+import PayloadBenefits from "../components/pageBlocks/home/payloadBenefits";
+import CaseStudies from "../components/pageBlocks/home/caseStudies";
+import OurClients from "../components/pageBlocks/home/ourClients";
+import FeatureExpertise from "../components/pageBlocks/home/featureExpertise";
+import RelatedServices from "../components/pageBlocks/home/relatedServices";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <Header />
+  <HomeHero />
+  <PayloadClients />
+  <PayloadPartners />
+  <OurServices client:load />
+  <PayloadBenefits />
+  <CaseStudies client:load />
+  <OurClients />
+  <FeatureExpertise client:load />
+  <RelatedServices client:load />
 </Layout>
