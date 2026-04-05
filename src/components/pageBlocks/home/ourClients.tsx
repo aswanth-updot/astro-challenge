@@ -11,7 +11,7 @@ import barbeque from "../../../assets/home/clients/barbeque.svg";
 
 const OurClients = () => {
   return (
-    <div className="common-padding-x bg-secondary-bg font-sans text-secondary-text py-10 md:py-14">
+    <div className="common-padding-x bg-secondary-bg font-sans text-secondary-text pt-10 pb-10 md:pb-14">
       <h2 className="text-start sm:text-center font-medium text-[32px] md:text-[40px]">
         Our Clientele
       </h2>

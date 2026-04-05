@@ -12,7 +12,7 @@ import awcws from "../../../assets/home/case-studies/awcws.png";
 
 const CaseStudies = () => {
   return (
-    <div className="bg-secondary-bg py-[66px] md:pb-[80px] md:py-[113px]">
+    <div className="bg-secondary-bg py-[66px] md:pb-[80px] md:pt-[113px]">
       <Carousel opts={{ dragFree: true }}>
         <div className="flex justify-between items-end w-full common-padding-x">
           <div className="flex flex-col gap-3">
@@ -30,7 +30,7 @@ const CaseStudies = () => {
           {caseStudies.map((study) => (
             <CarouselItem
               key={study.title}
-              className="cursor-grab select-none text-secondary-text basis-[calc(0.9/1*100%)] sm:basis-1/2 lg:basis-1/3  sm:min-h-[506px] mx-3"
+              className="cursor-grab select-none text-secondary-text basis-[calc(0.9/1*100%)] sm:basis-1/2 lg:basis-1/3 mx-3"
             >
               <div className="w-full font-sans overflow-hidden">
                 <div className="w-full overflow-hidden">
