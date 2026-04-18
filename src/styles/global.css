@@ -22,6 +22,7 @@
 
     --color-white-1: #F6F6F6;
     --color-white-2: #EDEDED;
+    --color-white-3: #F9F9F9;
 
     --color-blue-1: #229EFF;
     --color-blue-2: #D8D8D8;
@@ -29,6 +30,32 @@
 
     --color-black-2: #151515;
     --color-black-3: #353535;
+    --color-black-4: #E3E3E3;
+
+    --animate-accordion-up: accordion-up var(--tw-animation-duration, var(--tw-duration, 0.2s)) var(--tw-ease, ease-out) var(--tw-animation-delay, 0s) var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal) var(--tw-animation-fill-mode, none);
+    --animate-accordion-down: accordion-down var(--tw-animation-duration, var(--tw-duration, 0.2s)) var(--tw-ease, ease-out) var(--tw-animation-delay, 0s) var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal) var(--tw-animation-fill-mode, none);
+
+    @keyframes accordion-down {
+        0% {
+            height: 0;
+        }
+
+        to {
+            height: var(--radix-accordion-content-height,
+                    var(--bits-accordion-content-height, var(--reka-accordion-content-height, var(--kb-accordion-content-height, auto))));
+        }
+    }
+
+    @keyframes accordion-up {
+        0% {
+            height: var(--radix-accordion-content-height,
+                    var(--bits-accordion-content-height, var(--reka-accordion-content-height, var(--kb-accordion-content-height, auto))));
+        }
+
+        to {
+            height: 0;
+        }
+    }
 }
 
 .common-padding-x {
